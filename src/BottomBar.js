@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import "./public/styles/bottombar.css"
+import "./styles/bottombar.css"
 
 const BottomBar = () =>
   (

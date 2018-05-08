@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom' 
-import "./public/styles/header.css"
+import "./styles/header.css"
 import { Offline, Online } from 'react-detect-offline';
 // The Header creates links that can be used to navigate
 // between routes.

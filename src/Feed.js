@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./public/styles/card.css";
+import "./styles/card.css";
 
 var json = require('./data2.json');
 

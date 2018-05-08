@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "./public/styles/error.css"
+import "./styles/error.css"
 
 // Returns 404 when route doesnt match url.
 class Error extends React.Component{

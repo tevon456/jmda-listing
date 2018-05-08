@@ -2,7 +2,7 @@
 import React from "react";
 import Error from "./Error";
 import { Data } from "./data";
-import "./public/styles/content.css";
+import "./styles/content.css";
 
 var json = require('./data2.json');
 const PageView = ({ match }) => {

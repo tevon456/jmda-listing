@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
+
+/* https://hbr.org/2015/06/you-need-an-innovation-strategy */
+/* http://www.elirousso.com/ */
+:root {
+  --color: #2176FF;
+
+  --white: #ffffff;
+  --anti-flash-white: #F2F2F2;
+  --light-grey: #d4d4d4;
+  --grey: #999999;
+  --black: #111111;
+  --red: #dd084f;
+  --green: #33c67d;
+  --blue: #3c91e6;
+  --yellow: #e5d200;
+  --orange: #ff7423;
+
+  --jungle: #005950;
+  --cinnamon-satin: #d1647b;
+  --bitter-sweet: #f87060;
+  --sunset-orange: #f75e59;
+
+  --primary-color: var(--black, #111111);
+  --secondary-color: var(--color);
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+::-moz-selection {
+  background: var(--secondary-color, #f87060);
+  color: var(--white, #ffffff);
+}
+::selection {
+  background: var(--secondary-color, #f87060);
+  color: var(--white, #ffffff);
+}
+
+//Microsoft browsers related css ignore the errors
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  /* IE10 & IE11 CSS styles go here */
+  ::selection {
+    background: #f87060;
+    color: #ffffff;
+  }
+}
+
+@supports (-ms-ime-align: auto) {
+  /* Microsoft EdgeV13&14 CSS styles go here */
+  ::selection {
+    background: #f87060;
+    color: #ffffff;
+  }
+}
+
+@supports (-ms-accelerator: true) {
+  /* Microsoft EdgeV13 CSS styles go here */
+  ::selection {
+    background: var(--secondary-color, #f87060);
+    color: var(--white, #ffffff);
+  }
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  background: var(--anti-flash-white);
+  color: #111111;
+}
+
+.page {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.home {
+  min-height: 100vh;
+  background: var(--secondary-color);
+  padding-top: 20vh;
+  color: #f2f2f2;
+}
+
+.home h1 {
+  text-align: center;
+}
+
+.backLink {
+  color: var(--white, #ffffff);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  background-color: var(--primary-color, #111111);
+  padding: 4px 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  position: fixed;
+  float: right;
+  padding: 6px 12px;
+  transform: translateY(-6px);
+  -webkit-box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
+  -moz-box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
+  box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
+}
+
+.backLink:hover {
+  background: var(--secondary-color, #f87060);
+  color: var(--white, #ffffff);
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    margin-top: 20px;
+  }
+}
+
+.container {
+  min-height: 0px;
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: auto;
+  align-content: flex-start;
+}
+
+.container:after {
+  display: block;
+  content: " invisible node " flex(999 999 auto);
+}
+
+.item {
+  flex: 0 0 auto;
+  margin: 20px;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px -5px 28px 0px rgba(130, 130, 130, 0.65);
+  -moz-box-shadow: 0px -5px 28px 0px rgba(130, 130, 130, 0.65);
+  box-shadow: 0px -5px 28px 0px rgba(130, 130, 130, 0.65);
+}
+
+.transition {
+  transition: 0.0002s;
+  transition-timing-function: ease-in-out;
+  -webkit-transition: 0.0002s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition: 0.0002s;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition: 0.0002s;
+  -ms-transition-timing-function: ease-in-out;
+}
+
+.playerImage {
+  width: 100%;
+}

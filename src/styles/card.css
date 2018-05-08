@@ -26,17 +26,14 @@
   width: auto;
   height: 20px;
   position: absolute;
-  transform: translate(12px, 176px);
+  transform: translate(16px, 156px);
   font-size: 16px;
 }
 
-.ribbon2 {
-  color: var(--color);
-  width: 40px;
-  height: 20px;
-  position: absolute;
-  transform: translate(230px, 140px);
-  font-size: 30px;
+h4{
+  font-size: 12px;
+  line-height:0.9;
+  font-weight: bolder; 
 }
 
 .card {

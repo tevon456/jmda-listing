@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/card.css";
 
-var json = require("./data2.json");
-
+var json2 = require("./data2.json");
+var json = json2.sort();
 class Commendations extends React.Component {
   render() {
     return (
       <div>
-        <div id="back"></div>
+        <div id="back" />
         <div className="containery page">
           {json.map(i => (
             <div
@@ -25,15 +25,15 @@ class Commendations extends React.Component {
               </div>
               <div className="card">
                 <div className="ribbon">
-                  <b>&#9819;{i.Custom2}</b>
+                  <h4>Branch: {i.Custom2}</h4>
                 </div>
                 <div className="triangle" />
                 <div className="container">
                   <h4>
-                    <b>To {i.Custom1}</b>
+                    <b>To: {i.Custom1}</b>
                   </h4>
                   <h4>
-                    <b>From {i.First_Name}</b>
+                    <b>From: {i.First_Name}</b>
                   </h4>
                 </div>
               </div>

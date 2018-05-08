@@ -4,7 +4,7 @@ import "./styles/card.css";
 
 var json = require('./data2.json');
 
-class Feed extends React.Component {
+class Commendations extends React.Component {
 
   render() {
     return (
@@ -14,7 +14,7 @@ class Feed extends React.Component {
             className="item"
             key={i.id}
             to={{
-              pathname: `/feed/${i.id}`,
+              pathname: `/Commendations/${i.id}`,
               // this is the trick!
               state: { modal: true }
             }}
@@ -42,4 +42,4 @@ class Feed extends React.Component {
   }
 }
 
-export default Feed;
+export default Commendations;

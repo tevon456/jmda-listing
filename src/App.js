@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
 
-
 import Home from "./Home";
-import Feed from "./Feed";
-import PageView from "./Page";
+import Commendations from "./Commendations";
 import Modal from "./Modal";
 import Header from "./Header";
-import BottomBar from "./BottomBar"
-import Error from "./Error"
+import Error from "./Error";
+import Peer from "./Peer";
 
 // import "/public/styles/app.css"
 
@@ -17,21 +15,20 @@ import Error from "./Error"
 // depending on you got there.
 //
 // Click the colors and see them full screen, then "visit the
-// Feed" and click on the colors. Note the URL and the component
+// commendations" and click on the colors. Note the URL and the component
 // are the same as before but now we see them inside a modal
 // on top of the old screen.
 
 class App extends Component {
-
   // We can pass a location to <Switch/> that will tell it to
   // ignore the router's current location and use the location
   // prop instead.
   //
   // We can also use "location state" to tell the app the user
   // wants to go to `/img/2` in a modal, rather than as the
-  // main page, keeping the Feed visible behind it.
+  // main page, keeping the commendations visible behind it.
   //
-  // Normally, `/img/2` wouldn't match the Feed at `/`.
+  // Normally, `/img/2` wouldn't match the commendations at `/`.
   // So, to get both screens to render, we can save the old
   // location and pass it to Switch, so it will think the location
   // is still `/` even though its `/img/2`.
@@ -59,17 +56,15 @@ class App extends Component {
       <div>
         <Header />
         <div>
-        <Switch location={isModal ? this.previousLocation : location}>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/feed" component={Feed} />
-          <Route exact path="/img/:id" component={PageView} />
-          <Route path="/feed/:id" component={PageView} />
-          <Route exact path="/*/" component={Error} />
-        </Switch>
+          <Switch location={isModal ? this.previousLocation : location}>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/commendations" component={Commendations} />
+            <Route exact path="/Peer" component={Peer} />
+            <Route exact path="/*/" component={Error} />
+          </Switch>
         </div>
-        <BottomBar/>
 
-        {isModal ? <Route path="/feed/:id" component={Modal} /> : null}
+        {isModal ? <Route path="/commendations/:id" component={Modal} /> : null}
       </div>
     );
   }

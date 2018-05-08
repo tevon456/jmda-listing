@@ -1,6 +1,5 @@
 import React from "react";
 import Error from "./Error";
-import { Data } from "./data";
 import "./styles/modal.css";
 
 var json = require('./data2.json');

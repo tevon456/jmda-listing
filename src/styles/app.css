@@ -4,7 +4,7 @@
 /* https://hbr.org/2015/06/you-need-an-innovation-strategy */
 /* http://www.elirousso.com/ */
 :root {
-  --color: #b00424;
+  --color: #e73411;
 
   --white: #ffffff;
   --anti-flash-white: #f2f2f2;
@@ -94,7 +94,7 @@ body {
   text-decoration: none;
   font-size: 14px;
   background-color: var(--primary-color, #111111);
-  padding: 4px 8px;
+  padding: 12px 10px;
   border: none;
   cursor: pointer;
 }
@@ -110,35 +110,13 @@ body {
 }
 
 .backLink:hover {
-  background: var(--secondary-color, #f87060);
-  color: var(--white, #ffffff);
+  color: var(--secondary-color);
 }
 
 @media only screen and (max-width: 500px) {
   .main {
     margin-top: 20px;
   }
-}
-
-.container {
-  min-height: 0px;
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: auto;
-  align-content: flex-start;
-}
-
-.container:after {
-  display: block;
-  content: " invisible node " flex(999 999 auto);
-}
-
-.item {
-  flex: 0 0 auto;
-  margin: 20px;
 }
 
 .shadow {

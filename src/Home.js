@@ -4,7 +4,7 @@ import "./styles/home.css";
 
 const Home = () => (
   <div className="home">
-    <h1>Wow Commendations </h1>
+    <h1>Agent Commendations </h1>
     <center>
       <Link className="backLink" to="/commendations">
         Click here

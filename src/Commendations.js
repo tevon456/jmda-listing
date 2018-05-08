@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/card.css";
 
-var json2 = require("./data2.json");
-var json = json2.sort();
+var json = require("./data2.json");
+
 class Commendations extends React.Component {
   render() {
     return (
@@ -25,7 +25,7 @@ class Commendations extends React.Component {
               </div>
               <div className="card">
                 <div className="ribbon">
-                  <h4>Branch: {i.Custom2}</h4>
+                  <h4 className="branch">Branch: {i.Custom2}</h4>
                 </div>
                 <div className="triangle" />
                 <div className="container">

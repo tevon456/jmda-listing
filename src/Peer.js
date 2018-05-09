@@ -3,7 +3,7 @@ import React from "react";
 
 const Peer = () => (
   <div className="page">
-    <h1>Testing</h1>
+    <h1>No peer commendations today &#128546;</h1>
   </div>
 );
 

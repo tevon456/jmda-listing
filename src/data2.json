@@ -4,16 +4,14 @@
     "First_Name": "CHEVOY",
     "Custom1": "Kyhian",
     "Custom2": "Head Office",
-    "comments":
-      "The csr that i spoke with yesterday  she was very informative  because she directed me to the client web which  I wasn't aware of, so im extremely   thankful  for that bit of information."
+    "comments": "The csr that i spoke with yesterday  she was very informative  because she directed me to the client web which  I wasn't aware of, so im extremely   thankful  for that bit of information."
   },
   {
     "ID": 168053959,
     "First_Name": "JOANIE",
     "Custom1": "Diana",
-    "Custom2": "Sagicor Life - Cayman",
-    "comments":
-      "My representative Ms. Margaret is excellent, front line needs to be more alert."
+    "Custom2": " Cayman",
+    "comments": "My representative Ms. Margaret is excellent, front line needs to be more alert."
   },
   {
     "ID": 168055350,
@@ -33,7 +31,7 @@
     "ID": 168146011,
     "First_Name": "JAQUELINE",
     "Custom1": "Roseanna",
-    "Custom2": "Sagicor Life - Cayman",
+    "Custom2": " Cayman",
     "comments": "keep up the excellent services"
   },
   {
@@ -41,8 +39,7 @@
     "First_Name": "OPAL",
     "Custom1": "Andrea",
     "Custom2": "Head Office",
-    "comments":
-      "I am extremely grateful that Sagicor does not apply fees for every transaction.I am considering transferring my business to you."
+    "comments": "I am extremely grateful that Sagicor does not apply fees for every transaction.I am considering transferring my business to you."
   },
   {
     "ID": 168055448,
@@ -63,8 +60,7 @@
     "First_Name": "OSHANE",
     "Custom1": "Leslie-Ann",
     "Custom2": "Head Office",
-    "comments":
-      "Leslie Ann Ferguson.....Very Excellent representative, I admire her patience and understanding to assit me...I like her work attitude aswell...."
+    "comments": "Leslie Ann Ferguson.....Very Excellent representative, I admire her patience and understanding to assit me...I like her work attitude aswell...."
   },
   {
     "ID": 168055448,
@@ -72,5 +68,110 @@
     "Custom1": "Beverley",
     "Custom2": "Ocho Rios",
     "comments": "Just wish I had invested more in the company."
+  },
+  {
+    "ID": 168055449,
+    "First_Name": "TESSA",
+    "Custom1": "Dahlia Campbell-Reid",
+    "Custom2": "Head Office",
+    "comments": "The contact center answered promptly, listened to what I had to say and was able to guide me to what needed to do with the what I had asked."
+  },
+  {
+    "ID": 168055448,
+    "First_Name": "JAUNITA",
+    "Custom1": "Simone Hendricks",
+    "Custom2": "Contact centre",
+    "comments": "Sagicor customer service is well trained and prepare to answer any question throw at them."
+  },
+  {
+    "ID": 168245448,
+    "First_Name": "MARVIN",
+    "Custom1": "Travis Thomas",
+    "Custom2": "Contact centre",
+    "comments": "the agent was good"
+  },
+  {
+    "ID": 168605448,
+    "First_Name": "GIBBONI",
+    "Custom1": "Devra Williams",
+    "Custom2": "Contact centre",
+    "comments": "No other comments, it's good that you actually spend time to make the customer service easier"
+  },
+  {
+    "ID": 168543448,
+    "First_Name": "JAYAN",
+    "Custom1": "Shirrica Douglas",
+    "Custom2": "Head Office",
+    "comments": "Keep up the great job exceptional customer service comfortable environment however portal not so ueer friendly as suggested try making it a tad simplier for others to manoeuvre."
+  },
+  {
+    "ID": 168051448,
+    "First_Name": "AYUNGA",
+    "Custom1": "JANOY SMITH",
+    "Custom2": "Contact centre",
+    "comments": "The overall experience was good"
+  },
+  {
+    "ID": 168055738,
+    "First_Name": "Simone",
+    "Custom1": "Jody-Ann Hayden",
+    "Custom2": "Contact centre",
+    "comments": "Keep up the great work."
+  },
+  {
+    "ID": 106055448,
+    "First_Name": "CLAUDETT",
+    "Custom1": "NADIAN GAYLE",
+    "Custom2": "Contact centre",
+    "comments": "No i do not.The agent answered all my questions."
+  },
+  {
+    "ID": 268055448,
+    "First_Name": "JERMAINE",
+    "Custom1": "Remaro Wilson",
+    "Custom2": "Contact centre",
+    "comments": "Keep up the good work"
+  },
+  {
+    "ID": 268055441,
+    "First_Name": "ALDWYN",
+    "Custom1": "Tatianna Thomas-Hill",
+    "Custom2": "Contact centre",
+    "comments": "I am currently residing in the United States and I am accustomed to a high level of customer service where ever I go here. My interaction with this representative made me feel like I was interfacing with a representative here. I was very impressed with her professionalism and knowledge. This is by far the best customer service I have received since I have been interacting with the company. I am recommending that she be commended."
+  },
+  {
+    "ID": 268055442,
+    "First_Name": "MARVIA",
+    "Custom1": "NADIAN GAYLE",
+    "Custom2": "Contact centre",
+    "comments": "good service!"
+  },
+  {
+    "ID": 268055443,
+    "First_Name": "Horace",
+    "Custom1": "Tamanta Lee",
+    "Custom2": "Contact centre",
+    "comments": "Other companies needs to take a page out of your book....in-fact you guys could publish a booklet on how to offer excellent service to customers and issues to other business places. \"big ups"
+  },
+  {
+    "ID": 268055444,
+    "First_Name": "JORDEEN",
+    "Custom1": "Simone Hendricks",
+    "Custom2": "Contact centre",
+    "comments": "Great job"
+  },
+  {
+    "ID": 268055445,
+    "First_Name": "Rickardo",
+    "Custom1": "Remaro Wilson",
+    "Custom2": "Contact centre",
+    "comments": "The representative stayed on the line and ensured that the process was complete before hanging up"
+  },
+  {
+    "ID": 268055447,
+    "First_Name": "AVIS",
+    "Custom1": "Maureen Stone-Barrett",
+    "Custom2": "Savanna-La-Mar",
+    "comments": "the agent was very nice and I felt comfortable talking to her"
   }
 ]

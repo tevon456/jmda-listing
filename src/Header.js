@@ -7,6 +7,7 @@ const Header = () => (
   <header>
     <nav>
       <ul className="header shadow">
+
         <li>
           <NavLink
             activeClassName="activelink"
@@ -27,9 +28,19 @@ const Header = () => (
             Commendations
           </NavLink>
         </li>
+        <li>
+          <NavLink
+            activeClassName="activelink"
+            className="link"
+            exact
+            to="/Stats"
+          >
+            Stats
+          </NavLink>
+        </li>
         <li id="logo">
           <Link id="logochild" to="/">
-            wOW
+            Agent
           </Link>
         </li>
       </ul>

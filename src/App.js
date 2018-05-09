@@ -7,6 +7,7 @@ import Modal from "./Modal";
 import Header from "./Header";
 import Error from "./Error";
 import Peer from "./Peer";
+import Stats from "./Stats";
 
 // import "/public/styles/app.css"
 
@@ -60,6 +61,7 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route exact path="/commendations" component={Commendations} />
             <Route exact path="/Peer" component={Peer} />
+            <Route exact path="/Stats" component={Stats} />
             <Route exact path="/*/" component={Error} />
           </Switch>
         </div>

@@ -36,8 +36,29 @@ return (
             Close
         </button>
         <h1 className="modal-content-head" >{modal.first_name} {modal.last_name}</h1>
-          <img alt="" src={modal.image} />
-          <h3>Description</h3>
+        <h2>{modal.first_name} {modal.last_name}</h2>
+          <hr/>
+          <ul>
+            <li>P360: <span>{modal.p360}</span></li>
+            <li>Average P360: <span>{modal.average_p360}</span></li>
+            <li>Surrender Conservation: <span>{modal.surrender_conservation}</span></li>
+            <li>Total Clients Service: <span>{modal.total_client_served}</span></li>
+            <li>Average Clients Served: <span>{modal.average_clients_served}</span></li>
+            <li># of Email Indemnity: <span>{modal.num_email_indemnity}</span></li>
+            <li>% of Email & Indemnity: <span>{modal.per_email_indemnity}</span></li>
+            <li># Client Web Registration: <span>{modal.num_web}</span></li>
+            <li>% of Client Web Registration: <span>{modal.per_web}</span></li>
+            <li># Proof of Address: <span>{modal.num_poa}</span></li>
+            <li>% of Proof of Address: <span>{modal.per_poa}</span></li>
+            <li>C.S.I.: <span>{modal.csi}</span></li>
+            <li>% ECRIS Quality Log: <span>{modal.ECRISQLog}</span></li>
+            <li>Number of days works: <span>{modal.num_work}</span></li>
+            <li>Number of days logged to Qlogik/Ecris: <span>{modal.num_days_logged}</span></li>
+            <li>Training Hours: <span>{modal.t_Hours}</span></li>
+            <li>Complete All Mandatory Training: <span>{modal.n_training}</span></li>
+            <li>NPS: <span>{modal.nnps}</span></li>
+            <li>% Waiting Time: <span>{modal.wait}</span></li>
+          </ul>      
           <p>{modal.content}</p>
         </div>
       </div>

@@ -51,9 +51,9 @@ class App extends Component {
           <Switch location={isModal ? this.previousLocation : location}>
             <Route exact path="/" component={Home} />
             <Route exact path="/commendations" component={Commendations} />
-            <Route exact path="/Peer" component={Peer} />
-            <Route exact path="/Stats" component={Stats} />
-            <Route path="/Stats/:id" component={PageView} />
+            <Route exact path="/peer" component={Peer} />
+            <Route exact path="/stats" component={Stats} />
+            <Route path="/stats/:id" component={PageView} />
             <Route exact path="/*/" component={Error} />
           </Switch>
         </div>

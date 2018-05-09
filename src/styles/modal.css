@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:800');
+
 .modal {
   position: fixed;
   z-index: 3;
@@ -41,8 +43,16 @@
   color: #111111;
 }
 
-.modal-content h3{
-  margin-top:60px; 
+.modal-content li{
+  padding:16px; 
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  list-style: none;
+  font-weight: bolder;
+}
+
+.modal-content li span{
+  color:#83A637;
 }
 
 .modal-content-head{

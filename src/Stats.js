@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/card.css";
 
-var json = require('./data2.json');
+var json = require('./data/data.json');
 
 class Stats extends React.Component {
 
   render() {
     return (
-      <div className="containery page">
+      <div className="containery page animated fadeIn">
         {json.map(i => (
           <Link 
             className="item"
@@ -30,8 +30,12 @@ class Stats extends React.Component {
                     <h4>{i.first_name} {i.last_name}</h4>
                   </li>
                   <li>
-                    <h5>{i.location} Branch</h5>
+                    <h5>{i.branch} Branch</h5>
                   </li>
+                  <li>
+                    <h5>{i.branch} Branch</h5>
+                  </li>
+
                 </ul>
               </div>
             </div>

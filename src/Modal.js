@@ -2,7 +2,7 @@ import React from "react";
 import Error from "./Error";
 import "./styles/modal.css";
 
-var json = require('./data2.json');
+var json = require('./data/data.json');
 
 const Modal = ({ match, history }) => {
   console.log("opened a modal")
@@ -30,8 +30,8 @@ const Modal = ({ match, history }) => {
 
 return (
     <div >
-    <div className="modal" ><ModalScroll/>
-      <div id="modal-content-animation" className="modal-content animated fadeInUp" >
+    <div className="modal " ><ModalScroll/>
+      <div id="modal-content-animation" className="modal-content animated fadeIn" >
         <button className="backLink close" type="button" onClick={back} >
             Close
         </button>

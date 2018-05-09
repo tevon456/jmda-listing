@@ -19,6 +19,7 @@
   display: block;
   overflow-y: auto;
   overflow-x: hidden;
+  text-align: left;
 }
 
 #modal-content-animation {
@@ -47,7 +48,8 @@
 .modal-content-head{
   font-weight:bolder;
   padding: 20px 0px;
-  
+  color:black;
+  text-align: left;
 }
 
 .modal-content img {

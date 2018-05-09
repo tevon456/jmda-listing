@@ -12,7 +12,7 @@
 }
 
 .content h3 {
-  color: var(--secondary-color, #F87060);
+  color: var(--secondary-color);
 }
 
 .content h2 h3 {

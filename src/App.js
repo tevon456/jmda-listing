@@ -8,17 +8,8 @@ import Header from "./Header";
 import Error from "./Error";
 import Peer from "./Peer";
 import Stats from "./Stats";
+import PageView from "./Page";
 
-// import "/public/styles/app.css"
-
-// This example shows how to render two different screens
-// (or the same screen in a different context) at the same url,
-// depending on you got there.
-//
-// Click the colors and see them full screen, then "visit the
-// commendations" and click on the colors. Note the URL and the component
-// are the same as before but now we see them inside a modal
-// on top of the old screen.
 
 class App extends Component {
   // We can pass a location to <Switch/> that will tell it to
@@ -26,13 +17,13 @@ class App extends Component {
   // prop instead.
   //
   // We can also use "location state" to tell the app the user
-  // wants to go to `/img/2` in a modal, rather than as the
-  // main page, keeping the commendations visible behind it.
+  // wants to go to `/Stats/id` in a modal, rather than as the
+  // stats page, keeping the commendations visible behind it.
   //
-  // Normally, `/img/2` wouldn't match the commendations at `/`.
+  // Normally, `/stats/id` wouldn't match the commendations at `/stats`.
   // So, to get both screens to render, we can save the old
   // location and pass it to Switch, so it will think the location
-  // is still `/` even though its `/img/2`.
+  // is still `/stats` even though its `/stats/id`.
   previousLocation = this.props.location;
 
   componentWillUpdate(nextProps) {
@@ -62,11 +53,12 @@ class App extends Component {
             <Route exact path="/commendations" component={Commendations} />
             <Route exact path="/Peer" component={Peer} />
             <Route exact path="/Stats" component={Stats} />
+            <Route path="/Stats/:id" component={PageView} />
             <Route exact path="/*/" component={Error} />
           </Switch>
         </div>
 
-        {isModal ? <Route path="/commendations/:id" component={Modal} /> : null}
+        {isModal ? <Route path="/Stats/:id" component={Modal} /> : null}
       </div>
     );
   }

@@ -2,21 +2,17 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./styles/envelope.css";
 
-var json = require("./data2.json");
+var json = require("./data/data2.json");
 
 class Commendations extends React.Component {
   render() {
     return (
       <div>
-        <div className="containery page">
+        <div className="containery page animated fadeIn">
           {json.map(i => (
             <div
               className="contain item"
-              key={i.ID}
-              to={{
-                pathname: `/Commendations/${i.ID}`,
-              }}
-            >
+              key={i.ID}>
               <div className="letter">
                 <p>{i.comments}</p>
               </div>

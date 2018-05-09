@@ -5,9 +5,10 @@
 /* http://www.elirousso.com/ */
 :root {
   --color: #8bbf1a;
+  --deeper: #7FAE18;
 
   --white: #ffffff;
-  --anti-flash-white: #f2f2f2;
+  --anti-flash-white: #e2e2e2;
   --light-grey: #d4d4d4;
   --grey: #999999;
   --black: #111111;
@@ -78,7 +79,7 @@ body {
 }
 
 .page h1{
-  color: var(--color);
+  color: black;
 }
 
 .home {
@@ -101,7 +102,6 @@ body {
   padding: 12px 10px;
   border: none;
   cursor: pointer;
-  border-radius: 4px;
   -webkit-box-shadow: 0px 39px 56px -10px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px 39px 56px -10px rgba(0, 0, 0, 0.52);
   box-shadow: 0px 39px 25pxpx -10px rgba(0, 0, 0, 0.52);
@@ -118,8 +118,7 @@ body {
 }
 
 .backLink:hover {
-  color: var(--secondary-color);
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--deeper);
 }
 
 @media only screen and (max-width: 500px) {

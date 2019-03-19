@@ -1,46 +1,51 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./styles/header.css";
+import "./public/styles/header.css";
+import { Offline, Online } from "react-detect-offline";
 // The Header creates links that can be used to navigate
 // between routes.
 const Header = () => (
   <header>
     <nav>
       <ul className="header shadow">
+        <li>
+          <NavLink
+            activeClassName="activelink"
+            className="link"
+            exact
+            to="/list"
+          >
+            List
+          </NavLink>
+        </li>
+        <Offline>
+          <li title="Your offline check connection">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="22"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-wifi-off"
+            >
+              <line x1="1" y1="1" x2="23" y2="23" />
+              <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />
+              <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39" />
+              <path d="M10.71 5.05A16 16 0 0 1 22.58 9" />
+              <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88" />
+              <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+              <line x1="12" y1="20" x2="12" y2="20" />
+            </svg>
+          </li>
+        </Offline>
 
-        <li>
-          <NavLink
-            activeClassName="activelink"
-            className="link"
-            exact
-            to="/Peer"
-          >
-            Peer
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeClassName="activelink"
-            className="link"
-            exact
-            to="/Commendations"
-          >
-            Commendations
-          </NavLink>
-        </li>
-        <li>
-          <NavLink
-            activeClassName="activelink"
-            className="link"
-            exact
-            to="/Stats"
-          >
-            Stats
-          </NavLink>
-        </li>
         <li id="logo">
           <Link id="logochild" to="/">
-            Agent
+            Dashboard
           </Link>
         </li>
       </ul>

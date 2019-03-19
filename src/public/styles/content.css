@@ -1,0 +1,38 @@
+.content {
+  margin-left: 24%;
+  margin-right: 24%;
+  padding: 80px 0px; 
+}
+
+.content p {
+  line-height: 1.4;
+  word-spacing: 3px;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.content h3 {
+  color: var(--secondary-color, #F87060);
+}
+
+.content h2 h3 {
+  text-align: center;
+}
+
+.content-img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .content {
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .content {
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+}

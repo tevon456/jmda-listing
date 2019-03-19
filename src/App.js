@@ -1,31 +1,31 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-
 import Home from "./Home";
-import Commendations from "./Commendations";
-import Modal from "./Modal";
+import Feed from "./Feed";
 import Header from "./Header";
-import Error from "./Error";
-import Peer from "./Peer";
-import Stats from "./Stats";
-import PageView from "./Page";
-
+import axios from "axios";
 
 class App extends Component {
-  // We can pass a location to <Switch/> that will tell it to
-  // ignore the router's current location and use the location
-  // prop instead.
-  //
-  // We can also use "location state" to tell the app the user
-  // wants to go to `/Stats/id` in a modal, rather than as the
-  // stats page, keeping the commendations visible behind it.
-  //
-  // Normally, `/stats/id` wouldn't match the commendations at `/stats`.
-  // So, to get both screens to render, we can save the old
-  // location and pass it to Switch, so it will think the location
-  // is still `/stats` even though its `/stats/id`.
+  constructor(props) {
+    super(props);
+    this.state = {
+      previousLocation: props.location,
+      apiresponse: []
+    };
+  }
+  componentDidMount() {
+    let url = "https://api.sheety.co/f1db1680-2a10-47cc-b0fd-cad4ff77e9f7";
+    axios
+      .get(url)
+      .then(response => {
+        this.setState({ apiresponse: response.data });
+      })
+      .catch(function (error) {
+        // handle error
+        console.log(error);
+      });
+  }
   previousLocation = this.props.location;
-
   componentWillUpdate(nextProps) {
     const { location } = this.props;
     // set previousLocation if props.location is not modal
@@ -50,15 +50,17 @@ class App extends Component {
         <div>
           <Switch location={isModal ? this.previousLocation : location}>
             <Route exact path="/" component={Home} />
-            <Route exact path="/commendations" component={Commendations} />
-            <Route exact path="/peer" component={Peer} />
-            <Route exact path="/stats" component={Stats} />
-            <Route path="/stats/:id" component={PageView} />
-            <Route exact path="/*/" component={Error} />
+            <Route
+              exact
+              path="/list"
+              render={props => (
+                <Feed {...props} data={this.state.apiresponse} />
+              )}
+            />
           </Switch>
         </div>
 
-        {isModal ? <Route path="/Stats/:id" component={Modal} /> : null}
+        {/* {isModal ? <Route path="/feed/:id" component={Modal} /> : null} */}
       </div>
     );
   }

@@ -5,7 +5,7 @@ import "./public/styles/home.css";
 const Home = () => (
   <div className="home">
     <h1>JMDA Sponsors Dashboard</h1>
-    <p>Simple dashboard for JMDA partners and sponsors to view list of active members fo r the current month.</p>
+    <p style={{ textAlign: "center" }}>Simple dashboard for JMDA partners and sponsors to view list of active members fo r the current month.</p>
     <Link
       style={{
         background: "black",

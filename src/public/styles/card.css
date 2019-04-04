@@ -1,10 +1,10 @@
 .card {
   transition: 0.3s;
-  width: 200px;
+  width: 300px;
   overflow: hidden;
   text-decoration: none;
   color: var(--primary-color, #111111);
-  margin: 9px;
+  margin: 2px;
   float: left;
   background: #fff;
   border: 2px solid var(--secondary-color);

@@ -17,17 +17,27 @@
   --yellow: #e5d200;
   --orange: #ff7423;
 
-  --jungle: #005950;
-  --cinnamon-satin: #d1647b;
-  --bitter-sweet: #f87060;
-  --sunset-orange: #f75e59;
-
   --primary-color: var(--black, #111111);
   --secondary-color: var(--color);
 }
 
 .noscroll {
   overflow: hidden;
+}
+
+.search-input input{
+  transition: 0.3s;
+  padding:10px;
+  width: 100%;
+  overflow: hidden;
+  text-decoration: none;
+  color: var(--color, #111111);
+  float: left;
+  font-weight: bold;
+  font-size: 17px;
+  background: #fff;
+  border: 2px solid var(--secondary-color);
+  border-radius: 4px;
 }
 
 ::-moz-selection {
@@ -92,20 +102,8 @@ body {
   cursor: pointer;
 }
 
-.close {
-  position: fixed;
-  float: right;
-  padding: 6px 12px;
-  transform: translateY(-6px);
-  -webkit-box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
-  -moz-box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
-  box-shadow: 0px 15px 63px -13px rgba(31, 31, 31, 0.25);
-}
 
-.backLink:hover {
-  background: var(--secondary-color, #f87060);
-  color: var(--white, #ffffff);
-}
+
 
 @media only screen and (max-width: 500px) {
   .main {

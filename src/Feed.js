@@ -1,21 +1,22 @@
-import React, { Component } from "react";
-import SearchInput, { createFilter } from 'react-search-input'
 import "./public/styles/table.css";
 import "./public/styles/card.css";
 
-const KEYS_TO_FILTERS = ['firstName', 'lastName']
+import React, { Component } from "react";
+import SearchInput, { createFilter } from "react-search-input";
+
+const KEYS_TO_FILTERS = ["firstName", "lastName"];
 
 class Feed extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchTerm: ''
-    }
+      searchTerm: ""
+    };
     this.searchUpdated = this.searchUpdated.bind(this);
   }
 
   render() {
-    var month = new Array();
+    var month = [];
     month[0] = "January";
     month[1] = "February";
     month[2] = "March";
@@ -31,36 +32,47 @@ class Feed extends Component {
     var d = new Date();
     var n = month[d.getMonth()];
 
-    let members = this.props.data.filter(i => i.active == true);
+    let members = this.props.data.filter(i => i.active === true);
 
-    const filtered = members.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
+    const filtered = members.filter(
+      createFilter(this.state.searchTerm, KEYS_TO_FILTERS)
+    );
 
     return (
       <div>
         <div className="page">
           <div className="card item">
             <div className="card-container">
-              <h3>
+              <h4>
                 {n} :{" "}
                 <span style={{ color: "var(--secondary-color)" }}>
-                  {members.length} active members
+                  {members.length} active JMDA members
                 </span>
-              </h3>
+              </h4>
             </div>
           </div>
 
           <div style={{ marginBottom: "120px" }} />
 
-          <SearchInput className="search-input" onChange={this.searchUpdated} />
+          <div
+            style={{
+              position: "sticky",
+              top: "50px"
+            }}
+          >
+            <SearchInput
+              className="search-input"
+              onChange={this.searchUpdated}
+            />
+          </div>
 
           <div style={{ marginBottom: "120px" }} />
 
           <table id="customers">
             <thead
               style={{
-                position: "-webkit - sticky",
                 position: "sticky",
-                top: "20px"
+                top: "90px"
               }}
             >
               <tr>
@@ -70,7 +82,11 @@ class Feed extends Component {
             </thead>
             <tbody>
               {filtered.map(i => (
-                <tr>
+                <tr
+                  key={Math.random()
+                    .toString(36)
+                    .substring(2)}
+                >
                   <td>{i.firstName}</td>
                   <td>{i.lastName}</td>
                 </tr>
@@ -82,7 +98,7 @@ class Feed extends Component {
     );
   }
   searchUpdated(term) {
-    this.setState({ searchTerm: term })
+    this.setState({ searchTerm: term });
   }
 }
 

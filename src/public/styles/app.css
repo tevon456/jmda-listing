@@ -1,10 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
 @import url("https://fonts.googleapis.com/css?family=Bitter:400,700");
-
-/* https://hbr.org/2015/06/you-need-an-innovation-strategy */
-/* http://www.elirousso.com/ */
 :root {
-  --color: #2176ff;
+  --color: #4c7ce4;
 
   --white: #ffffff;
   --anti-flash-white: #f2f2f2;
@@ -25,9 +22,9 @@
   overflow: hidden;
 }
 
-.search-input input{
+.search-input input {
   transition: 0.3s;
-  padding:10px;
+  padding: 10px;
   width: 100%;
   overflow: hidden;
   text-decoration: none;
@@ -37,7 +34,7 @@
   font-size: 17px;
   background: #fff;
   border: 2px solid var(--secondary-color);
-  border-radius: 4px;
+  border-radius: 4px !important;
 }
 
 ::-moz-selection {
@@ -101,9 +98,6 @@ body {
   border: none;
   cursor: pointer;
 }
-
-
-
 
 @media only screen and (max-width: 500px) {
   .main {

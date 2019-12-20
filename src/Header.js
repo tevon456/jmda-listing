@@ -1,24 +1,22 @@
-import React from "react";
-import { Link, NavLink } from "react-router-dom";
 import "./public/styles/header.css";
+
+import { Link } from "react-router-dom";
+import React from "react";
 
 const Header = () => (
   <header>
     <nav>
-      <ul className="header shadow">
-        <li>
-          <NavLink
-            activeClassName="activelink"
-            className="link"
-            exact
-            to="/list"
-          >
-            List
-          </NavLink>
-        </li>
+      <ul
+        className="header shadow"
+        style={{ display: "flex", justifyContent: "center" }}
+      >
         <li id="logo">
-          <Link id="logochild" to="/">
-            Dashboard
+          <Link
+            id="logochild"
+            to="/"
+            style={{ display: "flex", alignItems: "center" }}
+          >
+            <img src="./192.png" alt="logo" width="40px" />
           </Link>
         </li>
       </ul>

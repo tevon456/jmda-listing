@@ -1,6 +1,7 @@
 .card {
   transition: 0.3s;
-  width: 300px;
+  width: auto;
+  padding: 4px;
   overflow: hidden;
   text-decoration: none;
   color: var(--primary-color, #111111);
@@ -74,10 +75,6 @@ h5 {
   position: absolute;
   transform: translate(8px, -12px);
 }
-
-/* .card:hover .price-tag{
-  background:var(--secondary-color);
-} */
 
 .imageContainer {
   max-width: 50px;

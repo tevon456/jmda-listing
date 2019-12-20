@@ -1,14 +1,18 @@
-import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./public/styles/app.css";
 
-import App from "./App";
+import * as serviceWorker from "./createServiceWorker";
 
-const ModalGallery = () => (
+import { Route, BrowserRouter as Router } from "react-router-dom";
+
+import App from "./App";
+import React from "react";
+import { render } from "react-dom";
+
+const Root = () => (
   <Router>
     <Route component={App} />
   </Router>
 );
 
-render(<ModalGallery />, document.getElementById("root"));
+render(<Root />, document.getElementById("root"));
+serviceWorker.register();

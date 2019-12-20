@@ -12,10 +12,9 @@
 
 .header li {
   float: right;
-  padding: 12px;
 }
 
-.header li svg{
+.header li svg {
   padding: 12px;
 }
 
@@ -31,14 +30,13 @@
   font-size: 16px;
 }
 
-.activelink{
- color: var(--secondary-color) !important;
+.activelink {
+  color: var(--secondary-color) !important;
 }
 
 .header #logo {
   position: relative;
   float: left;
-  padding: 12px;
 }
 
 #logo #logochild {
@@ -61,11 +59,11 @@
   font-weight: normal;
   color: white;
   letter-spacing: 0px;
-  font-family: 'Bitter', serif;
+  font-family: "Bitter", serif;
 }
 
 .header li a:hover:not(.active) {
-  color: var(--secondary-color, #F87060);
+  color: var(--secondary-color, #f87060);
 }
 
 @media only screen and (max-width: 500px) {
@@ -73,9 +71,9 @@
     display: none;
   }
 
-  .header li svg{
-  padding: 4px;
-}
+  .header li svg {
+    padding: 4px;
+  }
 
   #logo {
     margin: 0 auto;

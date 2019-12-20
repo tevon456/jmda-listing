@@ -3,7 +3,7 @@
   "version": "0.0.59",
   "description": "null",
   "keywords": [],
-  "homepage": "jmda-listing.netlify.com",
+  "homepage": "/",
   "main": "index.js",
   "dependencies": {
     "axios": "^0.19.0",

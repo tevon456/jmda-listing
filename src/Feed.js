@@ -72,7 +72,7 @@ class Feed extends Component {
             <thead
               style={{
                 position: "sticky",
-                top: "90px"
+                top: "94px"
               }}
             >
               <tr>
